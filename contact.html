@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>未燼島嶼 Unburnt Island｜聯絡合作</title>
+  <meta name="description" content="未燼島嶼聯絡合作頁，提供前端展示版表單與合作窗口建議。" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+  <main id="main">
+<section class="page-hero compact">
+  <div class="container page-hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">聯絡合作</span>
+      <h1>把合作入口獨立成一頁，<br>會比塞在首頁更清楚</h1>
+      <p class="lead">這一頁可同時承接投資、媒體、展會、學校、文化合作與 Steam 願望清單導流。現在先提供前端展示版表單。</p>
+    </div>
+    <div class="contact-cards reveal">
+      <div class="contact-card">
+        <h3>投資 / 顧問 / 輔導</h3>
+        <p>適合放團隊代表信箱、Pitch Deck 與簡報預約連結。</p>
+      </div>
+      <div class="contact-card">
+        <h3>媒體 / 展會 / 競賽</h3>
+        <p>適合放 press kit、訪談窗口與活動聯繫方式。</p>
+      </div>
+      <div class="contact-card">
+        <h3>玩家社群</h3>
+        <p>適合放 Steam、Discord、Instagram、YouTube 等連結。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split reveal">
+    <div class="card">
+      <span class="kicker">合作表單</span>
+      <h2 style="font-size:2rem; margin-top:12px;">前端展示版</h2>
+      <p>這份表單目前只做前端驗證。之後若你要正式收件，只要串接 EmailJS、Formspree、Google Apps Script 或自家後端 API 即可。</p>
+      <form id="contactForm" class="form-grid" novalidate>
+        <div class="field">
+          <label for="name">姓名 / 單位</label>
+          <input id="name" name="name" type="text" placeholder="例如：某某教授 / 某某媒體 / 某某創投" />
+          <div class="error-text" data-error-for="name"></div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" />
+          <div class="error-text" data-error-for="email"></div>
+        </div>
+        <div class="field">
+          <label for="message">合作需求</label>
+          <textarea id="message" name="message" placeholder="請簡述合作目的、時程與需求"></textarea>
+          <div class="error-text" data-error-for="message"></div>
+        </div>
+        <button class="btn primary" type="submit">送出需求</button>
+        <div id="formMessage" class="form-message"></div>
+      </form>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;">建議你接下來補上的真實資訊</h3>
+      <ul>
+        <li>官方信箱</li>
+        <li>Discord 邀請連結</li>
+        <li>Steam 商店頁</li>
+        <li>Instagram / Facebook / YouTube</li>
+        <li>下載 Pitch Deck 或 Press Kit 的按鈕</li>
+      </ul>
+      <p class="form-note">如果你想，我下一步可以直接把這一頁再改成真正可寄信的版本。</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
