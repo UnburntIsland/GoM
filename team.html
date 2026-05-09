@@ -3,94 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>《森循島》｜團隊架構</title>
-  <meta name="description" content="展示本計畫的角色分工、合作需求與指導架構。" />
+  <title>《森循島》｜團隊介紹</title>
+  <meta name="description" content="介紹未燼島嶼團隊成員、指導老師、分工與內容把關流程。" />
+  <meta name="theme-color" content="#0b1f18" />
+  <meta property="og:title" content="《森循島》｜團隊介紹" />
+  <meta property="og:description" content="介紹未燼島嶼團隊成員、指導老師、分工與內容把關流程。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/pages.css" />
 </head>
 <body data-page="team">
-  <div id="site-header"></div>
+  
+<a href="#main" class="skip-link">跳到主要內容</a>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="森循島首頁">
+      <img src="assets/images/logo.svg" alt="" class="brand-logo" />
+      <span class="brand-copy"><strong>森循島</strong><small>永續科普教育遊戲</small></span>
+    </a>
+    <nav class="site-nav" aria-label="主選單"><a href="index.html" class="">首頁</a><a href="about.html" class="">計畫理念</a><a href="gameplay.html" class="">玩法科普</a><a href="impact.html" class="">永續影響</a><a href="progress.html" class="">執行規劃</a><a href="team.html" class="is-active">團隊介紹</a><a href="contact.html" class="">合作聯絡</a></nav>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="開啟選單"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav"><nav aria-label="行動版主選單"><a href="index.html" class="">首頁</a><a href="about.html" class="">計畫理念</a><a href="gameplay.html" class="">玩法科普</a><a href="impact.html" class="">永續影響</a><a href="progress.html" class="">執行規劃</a><a href="team.html" class="is-active">團隊介紹</a><a href="contact.html" class="">合作聯絡</a></nav></div>
+</header>
   <main id="main">
-    <section class="page-hero compact">
-      <div class="container page-hero-grid">
-        <div class="reveal">
-          <span class="eyebrow">團隊架構</span>
-          <h1>先以角色分工呈現，<br>正式名單之後再補</h1>
-          <p class="lead">因為你們目前還不想在網站上放正式報名資料，這一頁先改成「團隊架構」版本：凸顯做這件事需要哪些能力，並保留後續替換正式姓名與經歷的空間。</p>
-        </div>
-        <div class="card reveal">
-          <h3 style="margin-top:0;">目前建議呈現方式</h3>
-          <ul class="list-clean">
-            <li>以角色職能取代姓名，避免反覆修改。</li>
-            <li>保留指導老師與合作需求欄位。</li>
-            <li>正式送件前再統一替換成真實成員資訊。</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container card-grid cols-4 reveal">
-        <article class="card team-card">
-          <span class="role">專案統籌</span>
-          <h3>企劃與內容整合</h3>
-          <p>負責計畫定位、永續教育目標、工作坊設計與對外提案整合。</p>
-          <dl>
-            <div><dt>重點任務</dt><dd>把遊戲、教育與計畫書敘事整理成一致方向。</dd></div>
-            <div><dt>需具備能力</dt><dd>企劃撰寫、簡報統整、活動流程安排與協調。</dd></div>
-          </dl>
-        </article>
-        <article class="card team-card">
-          <span class="role">遊戲開發</span>
-          <h3>系統與原型實作</h3>
-          <p>負責農耕循環、小遊戲邏輯、互動流程與試玩版建置。</p>
-          <dl>
-            <div><dt>重點任務</dt><dd>完成 15–20 分鐘可試玩原型與基礎互動系統。</dd></div>
-            <div><dt>需具備能力</dt><dd>Unity / 前端 / 遊戲邏輯實作與測試修正。</dd></div>
-          </dl>
-        </article>
-        <article class="card team-card">
-          <span class="role">視覺與網站</span>
-          <h3>介面、插圖與對外素材</h3>
-          <p>負責網站視覺、知識卡版面、社群素材與整體風格統一。</p>
-          <dl>
-            <div><dt>重點任務</dt><dd>建立「永續、科普、溫暖」的整體視覺印象。</dd></div>
-            <div><dt>需具備能力</dt><dd>UI / UX、網頁前端、圖像生成與簡報視覺化。</dd></div>
-          </dl>
-        </article>
-        <article class="card team-card">
-          <span class="role">指導與顧問</span>
-          <h3>教育與內容把關</h3>
-          <p>指導老師目前確認為黃郁晴教授，後續可再補上系所與聯絡資訊。</p>
-          <dl>
-            <div><dt>重點任務</dt><dd>協助教育現場對接、成果回饋與計畫方向建議。</dd></div>
-            <div><dt>補充建議</dt><dd>若可行，也可加入永續或文化內容諮詢角色。</dd></div>
-          </dl>
-        </article>
-      </div>
-    </section>
+<section class="page-hero compact section-bg">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal"><span class="eyebrow">團隊介紹</span><h1>未燼島嶼團隊，<br>把遊戲設計連結永續教育</h1><p class="lead">團隊由國立中山大學學生組成，結合企劃整合、遊戲開發、視覺溝通與教育推廣能力，推動《森循島》從遊戲原型走向校園行動實踐。</p></div>
+    <div class="mission-panel reveal"><div class="mission-item"><strong>團隊名稱</strong><span>未燼島嶼 Unburnt Island</span></div><div class="mission-item"><strong>計畫作品</strong><span>《森循島》臺灣原民生活情境永續教育遊戲</span></div><div class="mission-item"><strong>指導老師</strong><span>黃郁晴 教授</span></div></div>
+  </div>
+</section>
 
-    <section class="section">
-      <div class="container split reveal">
-        <div class="card">
-          <span class="kicker">合作需求</span>
-          <h2 style="font-size:2rem; margin-top:12px;">這一頁適合再補上的內容</h2>
-          <ul class="list-clean">
-            <li>正式團隊成員姓名、系級與簡短自我介紹。</li>
-            <li>顧問或合作單位（如課程、社團、USR 或校內永續單位）。</li>
-            <li>作品集、實作紀錄或過往活動經驗。</li>
-            <li>若之後有工作坊照片，也很適合補在此頁建立信任感。</li>
-          </ul>
-        </div>
-        <div class="callout">
-          <h3 style="margin-top:0;">對外說法建議</h3>
-          <p>可先用「由跨領域學生團隊共同執行，結合遊戲設計、永續教育與視覺溝通能力」來描述，等正式名單與履歷定稿後，再逐一替換成具名介紹。</p>
-        </div>
-      </div>
-    </section>
+<section class="section">
+  <div class="container"><div class="section-heading reveal"><span class="kicker">核心成員</span><h2>跨域分工支撐完整行動方案</h2></div><div class="team-grid reveal">
+    <article class="team-card"><span class="role">專案統籌</span><h3>陳彥友</h3><p>負責計畫整合、永續教育目標、工作坊流程與對外提案。統整遊戲玩法、學習成效與行動方案敘事。</p></article>
+    <article class="team-card"><span class="role">遊戲開發</span><h3>陳育霖</h3><p>負責原型系統、互動邏輯、小遊戲流程與測試修正。將農耕、採集、釣魚與環境回饋轉化為可玩的機制。</p></article>
+    <article class="team-card"><span class="role">視覺與網站</span><h3>郭仕彥</h3><p>負責視覺風格、介面設計、網站建置與科普內容視覺化。讓永續知識以清楚、溫暖且易理解的方式呈現。</p></article>
+    <article class="team-card mentor"><span class="role">計畫指導</span><h3>黃郁晴 教授</h3><p>協助教育現場連結、計畫方向檢核與成果回饋，使遊戲原型能與校園永續行動有效結合。</p></article>
+  </div></div>
+</section>
+
+<section class="section alt">
+  <div class="container"><div class="section-heading reveal"><span class="kicker">內容把關</span><h2>從企劃到測試建立尊重且可靠的流程</h2></div><div class="process-grid reveal"><article><strong>01 主題界定</strong><p>確認每個任務對應永續學習目標。</p></article><article><strong>02 內容檢核</strong><p>避免使用特定部落神聖內容與容易造成誤讀的符號。</p></article><article><strong>03 原型測試</strong><p>確認任務能被理解，操作難度適合教育現場。</p></article><article><strong>04 回饋修正</strong><p>依試玩與問卷結果調整知識卡、任務節奏與敘事語氣。</p></article></div></div>
+</section>
+
+<section class="section">
+  <div class="container split"><div class="card reveal"><span class="kicker">團隊能力</span><h2>以遊戲為媒介，連結教育與行動</h2><p>未燼島嶼的核心能力在於把抽象概念拆解成玩家能理解的流程：把資源承載量做成採集限制，把碳循環做成拼圖，把環境污染做成可被修復的場景。</p></div><div class="card reveal"><span class="kicker">合作方向</span><h2>適合課程、社團與永續活動</h2><p>《森循島》可作為工作坊、課程導入、校園永續倡議與成果展示的互動媒介，促進學生對環境議題的討論與實踐。</p></div></div>
+</section>
+
   </main>
-  <div id="site-footer"></div>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand footer-brand" aria-label="森循島首頁">
+        <img src="assets/images/logo.svg" alt="" class="brand-logo" />
+        <span class="brand-copy"><strong>森循島</strong><small>讓玩家在遊戲裡理解自然共生</small></span>
+      </a>
+      <p>《森循島》由未燼島嶼團隊發起，以養成經營玩法承載永續教育、環境科普與校園行動實踐。</p>
+    </div>
+    <div>
+      <div class="footer-links"><a href="index.html">首頁</a><a href="about.html">計畫理念</a><a href="gameplay.html">玩法科普</a><a href="impact.html">永續影響</a><a href="progress.html">執行規劃</a><a href="team.html">團隊介紹</a><a href="contact.html">合作聯絡</a></div>
+      <p class="footer-note">© 2026 Unburnt Island. Sustainable learning through play.</p>
+    </div>
+  </div>
+</footer>
   <script src="assets/js/main.js"></script>
+  
 </body>
 </html>
