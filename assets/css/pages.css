@@ -49,3 +49,9 @@
   .quick-links,
   .story-sequence { grid-template-columns: 1fr; }
 }
+
+
+
+.quick-link { transition: transform .18s ease, border-color .18s ease; }
+.quick-link:hover { transform: translateY(-2px); border-color: rgba(216,233,127,.24); }
+.quick-link p { line-height: 1.7; }

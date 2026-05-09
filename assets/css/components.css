@@ -230,3 +230,11 @@
 @media (max-width: 760px) {
   .comparison { grid-template-columns: 1fr; }
 }
+
+
+
+.contact-cards { grid-template-columns: 1fr; }
+.contact-card p { margin: 0; }
+.team-card p { margin-bottom: 0; }
+.stat-stack { grid-template-columns: 1fr; }
+.hero-art .caption { margin-top: 12px; }

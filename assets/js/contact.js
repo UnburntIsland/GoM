@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const result = document.getElementById('formMessage');
     result.classList.add('show');
-    result.textContent = '表單驗證成功。這是前端展示版，後續只要串接 EmailJS、Formspree 或後端 API 就能正式送出。';
+    result.textContent = '表單驗證成功。這是展示版欄位，之後可串接 EmailJS、Google 表單、Formspree 或校內收件信箱正式使用。';
     form.reset();
   });
 });
