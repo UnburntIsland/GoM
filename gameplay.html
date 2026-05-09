@@ -3,139 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>《森循島》｜玩法與科普</title>
-  <meta name="description" content="介紹養成經營核心循環、永續小遊戲與科普知識卡設計。" />
+  <title>《森循島》｜玩法科普</title>
+  <meta name="description" content="介紹森循島的養成經營循環、永續小遊戲、科普知識卡與世界回饋系統。" />
+  <meta name="theme-color" content="#0b1f18" />
+  <meta property="og:title" content="《森循島》｜玩法科普" />
+  <meta property="og:description" content="介紹森循島的養成經營循環、永續小遊戲、科普知識卡與世界回饋系統。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/pages.css" />
 </head>
 <body data-page="gameplay">
-  <div id="site-header"></div>
+  
+<a href="#main" class="skip-link">跳到主要內容</a>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="森循島首頁">
+      <img src="assets/images/logo.svg" alt="" class="brand-logo" />
+      <span class="brand-copy"><strong>森循島</strong><small>永續科普教育遊戲</small></span>
+    </a>
+    <nav class="site-nav" aria-label="主選單"><a href="index.html" class="">首頁</a><a href="about.html" class="">計畫理念</a><a href="gameplay.html" class="is-active">玩法科普</a><a href="impact.html" class="">永續影響</a><a href="progress.html" class="">執行規劃</a><a href="team.html" class="">團隊介紹</a><a href="contact.html" class="">合作聯絡</a></nav>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="開啟選單"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav"><nav aria-label="行動版主選單"><a href="index.html" class="">首頁</a><a href="about.html" class="">計畫理念</a><a href="gameplay.html" class="is-active">玩法科普</a><a href="impact.html" class="">永續影響</a><a href="progress.html" class="">執行規劃</a><a href="team.html" class="">團隊介紹</a><a href="contact.html" class="">合作聯絡</a></nav></div>
+</header>
   <main id="main">
-    <section class="page-hero compact">
-      <div class="container page-hero-grid">
-        <div class="reveal">
-          <span class="eyebrow">玩法與科普</span>
-          <h1>讓玩家邊經營、<br>邊理解環境知識</h1>
-          <p class="lead">遊戲基底延續類《星露谷物語》的養成經營樂趣，但目標不是無止境擴張，而是讓玩家在生活經營、探索任務與環境修復之中，逐步學會節制、觀察與共生。</p>
-        </div>
-        <div class="hero-panel reveal">
-          <div class="image-frame">
-            <img src="assets/images/gameplay-island.png" alt="永續養成經營遊戲玩法示意圖，包含農耕、釣魚、工藝與碳循環知識卡" />
-          </div>
-        </div>
+
+<section class="page-hero compact section-bg">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal"><span class="eyebrow">玩法科普</span><h1>讓玩家邊經營，<br>邊理解環境知識</h1><p class="lead">《森循島》保留農場經營、地圖探索與生活建設的節奏，並把自然承載量、環境修復與科普知識設計成玩家每天面對的選擇。</p></div>
+    <figure class="hero-visual reveal"><img src="assets/images/gameplay-island.jpg" alt="森循島玩法示意圖，呈現農耕、釣魚、工藝與知識卡" /></figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container reveal">
+    <div class="tabs" role="tablist" aria-label="玩法內容分類">
+      <button class="tab-btn active" data-tab-button="loop" role="tab" aria-selected="true">核心經營循環</button>
+      <button class="tab-btn" data-tab-button="mini" role="tab" aria-selected="false">永續小遊戲</button>
+      <button class="tab-btn" data-tab-button="cards" role="tab" aria-selected="false">科普知識卡</button>
+      <button class="tab-btn" data-tab-button="feedback" role="tab" aria-selected="false">世界回饋</button>
+    </div>
+
+    <div class="tab-panel active" data-tab-panel="loop" role="tabpanel">
+      <div class="split">
+        <div class="card"><h2>從建立生活開始，學會節制與修復</h2><p>玩家在島上進行農耕、採集、釣魚、工藝製作、房屋建設與地圖探索。每個系統都與環境狀態相連，讓遊玩本身形成永續學習循環。</p><div class="timeline"><div class="timeline-item"><strong>生活建立</strong><p>整理田地、種植作物、蒐集素材、建置工作台與堆肥區。</p></div><div class="timeline-item"><strong>探索學習</strong><p>在森林、溪流與海岸接觸任務，理解自然規律與風險。</p></div><div class="timeline-item"><strong>共生取捨</strong><p>面對過採、污染與異常事件，思考短期收益與長期平衡。</p></div></div></div>
+        <div class="card"><h3>核心模組</h3><ul class="check-list"><li>農耕：播種、澆水、輪作、混作、施肥與堆肥。</li><li>採集：素材收集、區域休養、資源再生率。</li><li>釣魚：魚群、季節、水質與溪流垃圾狀態。</li><li>工藝：使用合規取得素材製作生活工具。</li><li>建設：家屋、倉庫、工作台、回收站與觀察點。</li></ul></div>
       </div>
-    </section>
+    </div>
 
-    <section class="section">
-      <div class="container reveal">
-        <div class="tabs">
-          <button class="tab-btn active" data-tab-button="loop">核心經營循環</button>
-          <button class="tab-btn" data-tab-button="mini">永續小遊戲</button>
-          <button class="tab-btn" data-tab-button="knowledge">科普知識卡</button>
-        </div>
-
-        <div class="tab-panel active" data-tab-panel="loop">
-          <div class="split">
-            <div class="card">
-              <h2 style="font-size:2rem; margin-top:0;">從生活建立開始，逐步學會節制與修復</h2>
-              <p>玩家會在島上進行農耕、採集、釣魚、工藝品製作與房屋建設。每項活動都與環境狀態相連，若忽略土壤、水質或棲地狀況，後續收穫與資源都會受到影響。</p>
-              <div class="timeline" style="margin-top:18px;">
-                <div class="timeline-item"><strong>生活建立</strong><div><span class="status-pill active">前期體驗</span><p>整理田地、種植作物、蒐集素材、建置堆肥區與回收站。</p></div></div>
-                <div class="timeline-item"><strong>探索學習</strong><div><span class="status-pill active">中期體驗</span><p>在山林、溪流與海岸場景中，透過任務與知識卡理解自然規律。</p></div></div>
-                <div class="timeline-item"><strong>共生取捨</strong><div><span class="status-pill active">後期體驗</span><p>面對資源過採、環境異常與修復選擇，思考短期利益與長期平衡。</p></div></div>
-              </div>
-            </div>
-            <div class="card">
-              <h3>核心玩法模組</h3>
-              <ul class="list-clean">
-                <li>農耕：播種、澆水、施肥、輪作、混作與堆肥。</li>
-                <li>採集：野菜、木材、石材與自然素材，採太多會降低再生率。</li>
-                <li>釣魚與溪流觀察：水質越好，魚群與生物多樣性越穩定。</li>
-                <li>工藝與建設：製作生活工具、工作台、倉庫與回收站。</li>
-                <li>地圖探索：透過不同場景任務理解環境問題與修復方法。</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-panel" data-tab-panel="mini">
-          <div class="split">
-            <div class="card media-card">
-              <img src="assets/images/knowledge-minigames.png" alt="永續教育小遊戲示意圖，包含溪流清潔、觀察通報與碳循環教學" />
-              <p class="caption">此圖可用來替代原本較偏文化展示的視覺，改成更明確的永續教育場景。</p>
-            </div>
-            <div class="card">
-              <h2 style="font-size:2rem; margin-top:0;">小遊戲不只是插曲，而是學習的關鍵節點</h2>
-              <div class="feature-list" style="margin-top:16px;">
-                <div class="feature-item">
-                  <div class="feature-icon">淨</div>
-                  <div>
-                    <h3>溪流垃圾清理</h3>
-                    <p>玩家清除垃圾、進行分類，學習污染對魚類、昆蟲與水質的影響。</p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon">衡</div>
-                  <div>
-                    <h3>資源承載量挑戰</h3>
-                    <p>透過限量採集或季節規劃，理解過度採收會讓自然恢復變慢。</p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon">巡</div>
-                  <div>
-                    <h3>巡守與安全通報</h3>
-                    <p>針對非法伐木、山老鼠或盜獵痕跡，以辨識、避險與通報為主，而非刺激對抗。</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-panel" data-tab-panel="knowledge">
-          <div class="split">
-            <div class="card">
-              <h2 style="font-size:2rem; margin-top:0;">把科普知識做成好閱讀、好記憶的遊戲內容</h2>
-              <p>知識卡會在玩家接觸相應場景時跳出，搭配簡明圖像與一句行動提示，降低說教感，提升可記憶性與實作連結。</p>
-              <div class="comparison" style="margin-top:18px;">
-                <div class="compare-card">
-                  <h4>知識卡主題</h4>
-                  <ul>
-                    <li>野外生存與安全避險</li>
-                    <li>農耕知識與土壤照顧</li>
-                    <li>碳循環與分解作用</li>
-                    <li>垃圾污染與水域生態</li>
-                    <li>棲地保護與生物多樣性</li>
-                  </ul>
-                </div>
-                <div class="compare-card good">
-                  <h4>希望達成的效果</h4>
-                  <ul>
-                    <li>讓玩家知道「為什麼要這樣做」</li>
-                    <li>把抽象知識連回生活行動</li>
-                    <li>支撐工作坊前後測與問卷設計</li>
-                    <li>讓遊戲與教育現場更容易對接</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <h3>知識卡呈現建議</h3>
-              <ul class="list-clean">
-                <li>每則控制在 40–80 字，搭配圖像與關鍵詞。</li>
-                <li>除了說明概念，也附上一句「生活行動提醒」。</li>
-                <li>避免高壓考題式口吻，改採鼓勵探索與理解的語氣。</li>
-                <li>未來可延伸為工作坊講義或社群貼文內容。</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <div class="tab-panel" data-tab-panel="mini" role="tabpanel">
+      <div class="split align-center">
+        <figure class="image-card"><img src="assets/images/knowledge-minigames.jpg" alt="溪流清潔、巡守通報與碳循環小遊戲示意" /></figure>
+        <div class="card"><h2>小遊戲是學習節點，也是劇情推進</h2><div class="feature-list"><div class="feature-item"><span class="icon">淨</span><div><h3>溪流垃圾清理</h3><p>清除垃圾、分類回收，理解污染如何影響水質與魚群。</p></div></div><div class="feature-item"><span class="icon">衡</span><div><h3>資源承載量挑戰</h3><p>在採集效率與自然恢復之間做取捨，理解輪替使用與休養。</p></div></div><div class="feature-item"><span class="icon">巡</span><div><h3>巡守與安全通報</h3><p>辨識非法伐木或盜獵痕跡，以保育觀察、避險與通報為核心。</p></div></div><div class="feature-item"><span class="icon">碳</span><div><h3>碳循環拼圖</h3><p>連結陽光、植物、土壤、分解作用與碳儲存的關係。</p></div></div></div></div>
       </div>
-    </section>
+    </div>
+
+    <div class="tab-panel" data-tab-panel="cards" role="tabpanel">
+      <div class="split">
+        <div class="card"><h2>知識卡讓科普變得短、清楚、可行動</h2><p>知識卡在玩家遇到相應情境時出現，以簡短文字、圖像提示與一個生活行動連結概念。</p><div class="knowledge-tags"><span>野外安全</span><span>農耕知識</span><span>水域生態</span><span>碳循環</span><span>棲地保護</span><span>垃圾污染</span></div></div>
+        <div class="card"><h3>知識卡範例</h3><div class="info-card"><strong>碳循環</strong><p>植物吸收二氧化碳並將碳儲存在生物體與土壤中。健康森林與土壤能幫助碳在環境中穩定循環。</p></div><div class="info-card"><strong>資源承載量</strong><p>同一地點連續採集會讓資源恢復變慢。輪替使用與休養能讓森林維持長期供給。</p></div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-tab-panel="feedback" role="tabpanel">
+      <div class="card"><h2>玩家行為會改變島嶼狀態</h2><div class="state-grid"><div><strong>水質</strong><p>受垃圾量、清理頻率與周邊植被影響。</p></div><div><strong>土壤</strong><p>受堆肥、輪作、過度耕作與季節影響。</p></div><div><strong>生物多樣性</strong><p>受棲地完整度、污染程度與干擾事件影響。</p></div><div><strong>社群信任</strong><p>受分享、修復行動與事件處理方式影響。</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container"><div class="section-heading reveal"><span class="kicker">教育連結</span><h2>每個玩法都對應一個學習目標</h2></div><div class="table-wrap reveal"><table><thead><tr><th>遊戲情境</th><th>玩家行動</th><th>學習重點</th></tr></thead><tbody><tr><td>溪流污染</td><td>清理、分類、回收</td><td>垃圾污染、水質、生物棲地</td></tr><tr><td>森林採集</td><td>限量採集、區域休養</td><td>資源承載量、再生率、節制</td></tr><tr><td>農耕管理</td><td>輪作、堆肥、施肥</td><td>土壤肥力、分解作用、循環利用</td></tr><tr><td>巡守事件</td><td>辨識、避險、通報</td><td>野外安全、保育倫理、公共行動</td></tr></tbody></table></div></div>
+</section>
+
   </main>
-  <div id="site-footer"></div>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand footer-brand" aria-label="森循島首頁">
+        <img src="assets/images/logo.svg" alt="" class="brand-logo" />
+        <span class="brand-copy"><strong>森循島</strong><small>讓玩家在遊戲裡理解自然共生</small></span>
+      </a>
+      <p>《森循島》由未燼島嶼團隊發起，以養成經營玩法承載永續教育、環境科普與校園行動實踐。</p>
+    </div>
+    <div>
+      <div class="footer-links"><a href="index.html">首頁</a><a href="about.html">計畫理念</a><a href="gameplay.html">玩法科普</a><a href="impact.html">永續影響</a><a href="progress.html">執行規劃</a><a href="team.html">團隊介紹</a><a href="contact.html">合作聯絡</a></div>
+      <p class="footer-note">© 2026 Unburnt Island. Sustainable learning through play.</p>
+    </div>
+  </div>
+</footer>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/gameplay.js"></script>
 </body>

@@ -4,78 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>《森循島》｜合作聯絡</title>
-  <meta name="description" content="提供試玩、工作坊、課程合作與回饋交流的聯絡入口。" />
+  <meta name="description" content="提供森循島課程導入、試玩工作坊、校園永續活動與教育推廣合作資訊。" />
+  <meta name="theme-color" content="#0b1f18" />
+  <meta property="og:title" content="《森循島》｜合作聯絡" />
+  <meta property="og:description" content="提供森循島課程導入、試玩工作坊、校園永續活動與教育推廣合作資訊。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/pages.css" />
 </head>
 <body data-page="contact">
-  <div id="site-header"></div>
+  
+<a href="#main" class="skip-link">跳到主要內容</a>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="森循島首頁">
+      <img src="assets/images/logo.svg" alt="" class="brand-logo" />
+      <span class="brand-copy"><strong>森循島</strong><small>永續科普教育遊戲</small></span>
+    </a>
+    <nav class="site-nav" aria-label="主選單"><a href="index.html" class="">首頁</a><a href="about.html" class="">計畫理念</a><a href="gameplay.html" class="">玩法科普</a><a href="impact.html" class="">永續影響</a><a href="progress.html" class="">執行規劃</a><a href="team.html" class="">團隊介紹</a><a href="contact.html" class="is-active">合作聯絡</a></nav>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="開啟選單"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav"><nav aria-label="行動版主選單"><a href="index.html" class="">首頁</a><a href="about.html" class="">計畫理念</a><a href="gameplay.html" class="">玩法科普</a><a href="impact.html" class="">永續影響</a><a href="progress.html" class="">執行規劃</a><a href="team.html" class="">團隊介紹</a><a href="contact.html" class="is-active">合作聯絡</a></nav></div>
+</header>
   <main id="main">
-    <section class="page-hero compact">
-      <div class="container page-hero-grid">
-        <div class="reveal">
-          <span class="eyebrow">合作聯絡</span>
-          <h1>把聯絡入口改成<br>更符合教育推廣的版本</h1>
-          <p class="lead">這一頁已經不再偏向商業募資式聯絡，而是改成更適合課程、試玩、工作坊與永續合作洽談的形式，方便你們後續承接校內外邀約。</p>
-        </div>
-        <div class="contact-cards reveal">
-          <div class="contact-card">
-            <h3>課程／工作坊合作</h3>
-            <p>適合與通識課、永續課程、服務學習、社團或校內活動串接。</p>
-          </div>
-          <div class="contact-card">
-            <h3>試玩與回饋</h3>
-            <p>歡迎邀請學生、老師或夥伴試玩原型，提供玩法與學習體驗意見。</p>
-          </div>
-          <div class="contact-card">
-            <h3>永續行動交流</h3>
-            <p>可延伸到成果分享、展覽展示、校園倡議與跨域合作。</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container split reveal">
-        <div class="card">
-          <span class="kicker">展示版表單</span>
-          <h2 style="font-size:2rem; margin-top:12px;">先保留可直接改用的聯絡欄位</h2>
-          <p>目前仍為前端展示版；未來若你們要正式啟用，可串接 EmailJS、Google 表單、Formspree 或學校提供的收件方式。</p>
-          <form id="contactForm" class="form-grid" novalidate>
-            <div class="field">
-              <label for="name">姓名／單位</label>
-              <input id="name" name="name" type="text" placeholder="例如：某某課程、某某社團、某某老師" />
-              <div class="error-text" data-error-for="name"></div>
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="name@example.com" />
-              <div class="error-text" data-error-for="email"></div>
-            </div>
-            <div class="field">
-              <label for="message">需求內容</label>
-              <textarea id="message" name="message" placeholder="請描述希望合作的形式、時程、對象或試玩需求"></textarea>
-              <div class="error-text" data-error-for="message"></div>
-            </div>
-            <button class="btn primary" type="submit">送出需求</button>
-            <div id="formMessage" class="form-message"></div>
-          </form>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0;">建議後續補上的真實資訊</h3>
-          <ul class="list-clean">
-            <li>官方聯絡信箱與主要窗口姓名。</li>
-            <li>試玩報名連結或 Google 表單。</li>
-            <li>工作坊簡介、合作時長與適合對象。</li>
-            <li>如果之後有成果影片，可放在這頁提升說服力。</li>
-          </ul>
-          <p class="form-note">如果你下一步要我繼續做，我也可以再幫你把這一頁補成「實際可寄信版本」或加上簡單 FAQ 區塊。</p>
-        </div>
-      </div>
-    </section>
+<section class="page-hero compact section-bg">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal"><span class="eyebrow">合作聯絡</span><h1>一起把永續學習<br>帶進遊戲與校園</h1><p class="lead">《森循島》開放課程導入、試玩工作坊、校園永續活動、展覽展示與教育推廣合作。合作內容以遊戲體驗、引導討論與學習成效蒐集為核心。</p></div>
+    <div class="contact-cards reveal"><article><h3>課程與工作坊</h3><p>適合永續、環境教育、服務學習、通識與跨域課程。</p></article><article><h3>試玩與回饋</h3><p>適合學生社群、課堂活動、成果展與教育研究場域。</p></article><article><h3>展覽與分享</h3><p>適合校園倡議、永續週、社會實踐成果展與交流活動。</p></article></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="card reveal"><span class="kicker">合作內容</span><h2>可提供的活動形式</h2><ul class="check-list"><li>15–20 分鐘遊戲原型體驗。</li><li>永續小遊戲任務與知識卡導讀。</li><li>工作坊討論題組與前後測工具。</li><li>成果展示、短講與計畫分享。</li><li>依課程主題調整任務順序與討論問題。</li></ul></div>
+    <div class="card reveal"><span class="kicker">適合對象</span><h2>從校園出發，連結更多學習場域</h2><p>適合高中職與大專校院課程、永續社團、USR 活動、環境教育工作坊、遊戲教育研究與跨域展演使用。</p><div class="badge-list"><span>環境教育</span><span>遊戲式學習</span><span>校園永續</span><span>社會實踐</span></div></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container split">
+    <div class="card reveal">
+      <span class="kicker">合作信件產生器</span>
+      <h2>整理需求並產生信件草稿</h2>
+      <p>填寫下方欄位後，系統會在本機開啟電子郵件草稿。本站不儲存表單內容。</p>
+      <form id="contactForm" class="form-grid" novalidate>
+        <label class="field"><span>姓名或單位</span><input id="name" name="name" type="text" autocomplete="name" placeholder="課程、社團、單位或個人名稱" /><small data-error-for="name"></small></label>
+        <label class="field"><span>Email</span><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" /><small data-error-for="email"></small></label>
+        <label class="field"><span>合作類型</span><select id="type" name="type"><option>課程導入</option><option>試玩工作坊</option><option>成果展演</option><option>永續活動</option><option>其他合作</option></select></label>
+        <label class="field"><span>需求內容</span><textarea id="message" name="message" placeholder="活動目標、對象、時間、場地與合作需求"></textarea><small data-error-for="message"></small></label>
+        <button class="btn primary" type="submit">產生信件草稿</button>
+        <div id="formMessage" class="form-message" role="status"></div>
+      </form>
+    </div>
+    <div class="card reveal"><span class="kicker">資料保護</span><h2>靜態網站表單不收集個資</h2><p>表單內容只會被整理成電子郵件草稿，不會送往伺服器，也不會在網站端保存。使用者能在寄出前完整檢視與修改信件內容。</p><div class="info-card"><strong>合作信件標題</strong><p>【森循島】永續教育遊戲合作洽詢</p></div><div class="info-card"><strong>信件可包含</strong><p>活動名稱、參與人數、可使用時間、場地設備與希望達成的學習目標。</p></div></div>
+  </div>
+</section>
+
   </main>
-  <div id="site-footer"></div>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand footer-brand" aria-label="森循島首頁">
+        <img src="assets/images/logo.svg" alt="" class="brand-logo" />
+        <span class="brand-copy"><strong>森循島</strong><small>讓玩家在遊戲裡理解自然共生</small></span>
+      </a>
+      <p>《森循島》由未燼島嶼團隊發起，以養成經營玩法承載永續教育、環境科普與校園行動實踐。</p>
+    </div>
+    <div>
+      <div class="footer-links"><a href="index.html">首頁</a><a href="about.html">計畫理念</a><a href="gameplay.html">玩法科普</a><a href="impact.html">永續影響</a><a href="progress.html">執行規劃</a><a href="team.html">團隊介紹</a><a href="contact.html">合作聯絡</a></div>
+      <p class="footer-note">© 2026 Unburnt Island. Sustainable learning through play.</p>
+    </div>
+  </div>
+</footer>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
 </body>
