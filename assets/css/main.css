@@ -15,26 +15,21 @@ body[data-page="progress"] .progress-timeline-section {
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
+  --timeline-gap: 14px;
+  gap: var(--timeline-gap);
   margin: 0;
-  padding: 22px 0 0;
+  padding: 18px 0 0;
   list-style: none;
 }
 
 .progress-timeline::before {
-  position: absolute;
-  top: 36px;
-  right: 8%;
-  left: 8%;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(216, 233, 127, 0.1), rgba(216, 233, 127, 0.8), rgba(121, 201, 141, 0.2));
-  content: "";
+  content: none;
 }
 
 .progress-timeline li {
   position: relative;
   min-height: 238px;
-  padding: 42px 18px 20px;
+  padding: 58px 18px 20px;
   border: 1px solid var(--border);
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
@@ -43,8 +38,9 @@ body[data-page="progress"] .progress-timeline-section {
 
 .progress-timeline li::before {
   position: absolute;
-  top: 7px;
-  left: 18px;
+  top: 14px;
+  left: 50%;
+  z-index: 2;
   width: 18px;
   height: 18px;
   border: 5px solid #173126;
@@ -52,6 +48,22 @@ body[data-page="progress"] .progress-timeline-section {
   background: var(--accent);
   box-shadow: 0 0 0 5px rgba(216, 233, 127, 0.12);
   content: "";
+  transform: translateX(-50%);
+}
+
+.progress-timeline li::after {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  z-index: 1;
+  width: calc(100% + var(--timeline-gap));
+  height: 2px;
+  background: linear-gradient(90deg, rgba(216, 233, 127, 0.78), rgba(121, 201, 141, 0.24));
+  content: "";
+}
+
+.progress-timeline li:last-child::after {
+  content: none;
 }
 
 .progress-timeline time,
@@ -130,8 +142,8 @@ body[data-page="progress"] .progress-timeline-section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .progress-timeline::before {
-    display: none;
+  .progress-timeline li::after {
+    content: none;
   }
 
   .progress-post-grid {
