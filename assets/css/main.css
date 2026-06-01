@@ -166,21 +166,17 @@ body[data-page="progress"] .progress-timeline-section {
 }
 
 .article-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
-  gap: 30px;
-  align-items: end;
+  display: block;
 }
 
 .article-head {
-  max-width: 820px;
+  max-width: 920px;
 }
 
 .article-layout {
   max-width: 980px;
 }
 
-.article-meta-panel,
 .article-cover,
 .article-body {
   border: 1px solid var(--border);
@@ -189,21 +185,21 @@ body[data-page="progress"] .progress-timeline-section {
   box-shadow: var(--shadow);
 }
 
-.article-meta-panel {
-  display: grid;
-  gap: 6px;
-  padding: 22px;
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
 }
 
-.article-meta-panel span {
+.article-tags span {
+  padding: 8px 13px;
+  border: 1px solid rgba(216, 233, 127, 0.26);
+  border-radius: 999px;
+  background: rgba(216, 233, 127, 0.1);
   color: var(--accent);
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   font-weight: 900;
-}
-
-.article-meta-panel strong {
-  margin-bottom: 8px;
-  color: var(--text);
 }
 
 .article-section {
@@ -308,8 +304,7 @@ body[data-page="progress"] .progress-timeline-section {
     grid-template-columns: 1fr;
   }
 
-  .progress-post-grid.single-post .progress-post-card,
-  .article-hero-grid {
+  .progress-post-grid.single-post .progress-post-card {
     grid-template-columns: 1fr;
   }
 }
@@ -328,7 +323,6 @@ body[data-page="progress"] .progress-timeline-section {
     display: block;
   }
 
-  .article-meta-panel,
   .article-body {
     border-radius: 20px;
   }
