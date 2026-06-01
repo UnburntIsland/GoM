@@ -145,6 +145,35 @@ body[data-page="progress"] .progress-timeline-section {
   margin-top: 16px;
 }
 
+.article-head {
+  max-width: 880px;
+}
+
+.article-layout {
+  max-width: 900px;
+}
+
+.article-card {
+  padding: clamp(24px, 4vw, 44px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
+  box-shadow: var(--shadow);
+}
+
+.article-card p {
+  color: #d9e5dc;
+  font-size: 1.04rem;
+}
+
+.article-card p:last-child {
+  margin-bottom: 0;
+}
+
+.article-back {
+  margin-top: 20px;
+}
+
 @media (max-width: 1060px) {
   .progress-timeline {
     grid-template-columns: repeat(2, minmax(0, 1fr));
