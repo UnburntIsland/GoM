@@ -103,8 +103,7 @@ body[data-page="progress"] .progress-timeline-section {
 }
 
 .progress-post-grid.featured-posts {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: 980px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .progress-post-grid.single-post {
@@ -335,6 +334,10 @@ body[data-page="progress"] .progress-timeline-section {
   }
 
   .progress-post-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .progress-post-grid.featured-posts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
